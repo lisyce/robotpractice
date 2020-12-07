@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>robot</artifactId>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.tahomarobotics</groupId>
+            <artifactId>sim-model</artifactId>
+            <version>2020.0.1-SNAPSHOT</version>
+        </dependency>
+        <dependency>
+            <groupId>org.tahomarobotics</groupId>
+            <artifactId>bear-essentials</artifactId>
+            <version>2020.1.0-SNAPSHOT</version>
+        </dependency>
+        <dependency>
+            <groupId>com.ctre.phoenix</groupId>
+            <artifactId>api-java</artifactId>
+            <version>5.17.6</version>
+        </dependency>
+        <dependency>
+            <groupId>edu.wpi.first.wpilibOldCommands</groupId>
+            <artifactId>wpilibOldCommands-java</artifactId>
+            <version>${wpi.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>edu.wpi.first.wpilibj</groupId>
+            <artifactId>wpilibj-java</artifactId>
+            <version>${wpi.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>edu.wpi.first.hal</groupId>
+            <artifactId>hal-java</artifactId>
+            <version>${wpi.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>edu.wpi.first.hal</groupId>
+            <artifactId>hal-jni</artifactId>
+            <version>${wpi.version}</version>
+            <classifier>windowsx86-64</classifier>
+        </dependency>
+        <dependency>
+            <groupId>edu.wpi.first.ntcore</groupId>
+            <artifactId>ntcore-java</artifactId>
+            <version>${wpi.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>edu.wpi.first.ntcore</groupId>
+            <artifactId>ntcore-jni</artifactId>
+            <version>${wpi.version}</version>
+            <classifier>windowsx86-64</classifier>
+        </dependency>
+        <dependency>
+            <groupId>edu.wpi.first.cameraserver</groupId>
+            <artifactId>cameraserver-java</artifactId>
+            <version>${wpi.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>edu.wpi.first.cscore</groupId>
+            <artifactId>cscore-java</artifactId>
+            <version>${wpi.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>edu.wpi.first.cscore</groupId>
+            <artifactId>cscore-jni</artifactId>
+            <version>${wpi.version}</version>
+            <classifier>windowsx86-64</classifier>
+        </dependency>
+        <dependency>
+            <groupId>edu.wpi.first.wpiutil</groupId>
+            <artifactId>wpiutil-java</artifactId>
+            <version>${wpi.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.logging.log4j</groupId>
+            <artifactId>log4j-slf4j-impl</artifactId>
+            <version>2.11.1</version>
+        </dependency>
+        <dependency>
+            <groupId>com.revrobotics.frc</groupId>
+            <artifactId>SparkMax-java</artifactId>
+            <version>1.5.1</version>
+        </dependency>
+        <!--dependency>
+            <groupId>com.revrobotics.frc</groupId>
+            <artifactId>ColorSensorV3-java</artifactId>
+            <version>1.0.0</version>
+        </dependency-->
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-databind</artifactId>
+            <version>2.9.6</version>
+        </dependency>
+
+
+    </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-dependency-plugin</artifactId>
+                <version>3.1.1</version>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>properties</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+
+        </plugins>
+    </build>
+
+</project>
